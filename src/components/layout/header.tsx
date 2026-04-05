@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { HiBars3 } from "react-icons/hi2";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -15,6 +14,16 @@ import {
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { siteConfig } from "@/content/site";
 import { cn } from "@/lib/utils";
+
+function MenuIcon() {
+  return (
+    <span aria-hidden="true" className="flex h-4 w-4 flex-col items-center justify-center gap-1">
+      <span className="block h-0.5 w-4 rounded-full bg-foreground" />
+      <span className="block h-0.5 w-4 rounded-full bg-foreground" />
+      <span className="block h-0.5 w-4 rounded-full bg-foreground" />
+    </span>
+  );
+}
 
 export function Header() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -107,7 +116,7 @@ export function Header() {
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="border-border/70 bg-card/75">
-                  <HiBars3 className="size-5" />
+                  <MenuIcon />
                   <span className="sr-only">Open navigation menu</span>
                 </Button>
               </SheetTrigger>
