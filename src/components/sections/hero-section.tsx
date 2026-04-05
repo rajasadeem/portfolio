@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { HiArrowDownTray, HiArrowLongRight } from "react-icons/hi2";
 import { Badge } from "@/components/ui/badge";
@@ -19,18 +20,18 @@ export function HeroSection() {
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
-            className="space-y-8"
+            className="space-y-10 lg:space-y-12"
           >
-            <motion.div variants={fadeUp} className="space-y-5">
+            <motion.div variants={fadeUp} className="space-y-6">
               <Badge>{heroContent.eyebrow}</Badge>
-              <div className="space-y-5">
+              <div className="space-y-6">
                 <h1 className="font-display text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl lg:leading-[1.05]">
                   {siteConfig.name}
                   <span className="mt-3 block bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
                     {heroContent.title}
                   </span>
                 </h1>
-                <p className="max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
+                <p className="max-w-2xl pt-1 text-lg leading-8 text-muted-foreground sm:text-xl">
                   {heroContent.summary}
                 </p>
                 <p className="max-w-2xl text-base leading-7 text-muted-foreground">
@@ -90,19 +91,48 @@ export function HeroSection() {
           >
             <div className="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-cyan-500/20 via-blue-500/10 to-emerald-400/20 blur-3xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950 px-6 py-6 text-slate-100 shadow-[0_30px_100px_rgba(2,6,23,0.45)]">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.24em] text-cyan-300/80">
-                    {heroContent.panelEyebrow}
-                  </p>
-                  <p className="mt-2 font-display text-2xl font-semibold">
+              <div className="space-y-6">
+                <div className="relative mx-auto w-full max-w-[250px] rounded-[1.9rem] border border-white/10 bg-white/[0.04] p-2.5 shadow-[0_24px_80px_rgba(6,182,212,0.16)]">
+                  <div className="absolute inset-x-8 -bottom-6 h-12 rounded-full bg-cyan-400/20 blur-2xl" />
+                  <div className="relative overflow-hidden rounded-[1.5rem] border border-white/10">
+                    <Image
+                      src="/images/profile-pic.jpg"
+                      alt={`${siteConfig.name} profile photo`}
+                      width={520}
+                      height={640}
+                      priority
+                      className="h-[320px] w-full object-cover object-center"
+                    />
+                    <div className="absolute inset-x-3 bottom-3 rounded-[1.1rem] border border-white/10 bg-slate-950/78 px-4 py-3 backdrop-blur">
+                      <div className="flex items-center justify-between gap-3">
+                        <div>
+                          <p className="text-sm font-semibold text-white">{siteConfig.name}</p>
+                          <p className="text-xs text-slate-400">{siteConfig.title}</p>
+                        </div>
+                        <div className="flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-[11px] font-medium text-emerald-300">
+                          <span className="size-2 rounded-full bg-emerald-400" />
+                          Available
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <p className="text-xs uppercase tracking-[0.24em] text-cyan-300/80">
+                      {heroContent.panelEyebrow}
+                    </p>
+                    <div className="h-px flex-1 bg-gradient-to-r from-cyan-400/60 via-blue-400/35 to-transparent" />
+                    <div className="grid grid-cols-3 gap-1.5">
+                      <span className="size-2.5 rounded-full bg-cyan-400" />
+                      <span className="size-2.5 rounded-full bg-blue-400" />
+                      <span className="size-2.5 rounded-full bg-emerald-400" />
+                    </div>
+                  </div>
+                  <p className="max-w-sm font-display text-3xl font-semibold leading-tight text-white">
                     {heroContent.panelTitle}
                   </p>
-                </div>
-                <div className="grid grid-cols-3 gap-2">
-                  <span className="size-3 rounded-full bg-cyan-400" />
-                  <span className="size-3 rounded-full bg-blue-400" />
-                  <span className="size-3 rounded-full bg-emerald-400" />
                 </div>
               </div>
 
