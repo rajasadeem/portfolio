@@ -3,9 +3,9 @@
 export const siteConfig: SiteConfig = {
   name: "Raja Sadeem",
   brand: "RS",
-  title: "Senior Full Stack Developer",
+  title: "Senior Full Stack Engineer",
   description:
-    "Senior full stack developer specializing in MERN Stack, DevOps, AI automation, and no-code product delivery.",
+    "Senior full stack engineer specializing in MERN Stack, DevOps, AI automation, and no-code product delivery.",
   email: "rajasadeem96@gmail.com",
   location: "Remote · Available worldwide",
   timezone: "UTC+05:00",

@@ -62,5 +62,5 @@ export const contactContent: ContactContent = {
 
 export const footerContent = {
   description:
-    "Senior full stack developer crafting premium product experiences across MERN, DevOps, AI automation, and no-code systems.",
+    "Senior full stack engineer crafting premium product experiences across MERN, DevOps, AI automation, and no-code systems.",
 };
