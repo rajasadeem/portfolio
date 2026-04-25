@@ -1,0 +1,48 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#060B18"/>
+  <rect x="52" y="52" width="1096" height="796" rx="36" fill="url(#bg)"/>
+  <rect x="112" y="120" width="436" height="660" rx="34" fill="rgba(255,255,255,0.05)" stroke="rgba(99,102,241,0.22)"/>
+  <rect x="604" y="120" width="476" height="188" rx="32" fill="rgba(255,255,255,0.05)" stroke="rgba(34,211,238,0.2)"/>
+  <rect x="604" y="354" width="476" height="188" rx="32" fill="rgba(255,255,255,0.05)" stroke="rgba(168,85,247,0.2)"/>
+  <rect x="604" y="588" width="476" height="192" rx="32" fill="rgba(255,255,255,0.05)" stroke="rgba(16,185,129,0.22)"/>
+  <circle cx="330" cy="294" r="118" fill="url(#disc)"/>
+  <circle cx="330" cy="294" r="30" fill="#08101F"/>
+  <path d="M314 240V500C314 531 336 556 370 556C404 556 430 534 430 506C430 478 406 460 378 460C363 460 349 465 338 473V312L456 284V432C456 463 478 488 512 488C546 488 572 466 572 438C572 410 548 392 520 392C505 392 491 397 480 405V196L314 240Z" fill="url(#note)"/>
+  <path d="M654 202C686 174 734 170 774 192C810 212 852 216 892 202C934 186 970 194 1006 222" stroke="url(#wave1)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M654 252C690 232 732 230 772 248C812 266 854 270 898 254C938 240 972 242 1014 268" stroke="rgba(255,255,255,0.24)" stroke-width="14" stroke-linecap="round"/>
+  <rect x="654" y="416" width="110" height="18" rx="9" fill="#22D3EE"/>
+  <rect x="654" y="458" width="292" height="18" rx="9" fill="rgba(255,255,255,0.28)"/>
+  <rect x="654" y="500" width="236" height="18" rx="9" fill="rgba(255,255,255,0.16)"/>
+  <circle cx="1000" cy="450" r="56" fill="url(#spark)"/>
+  <path d="M1000 416L1010 440L1036 450L1010 460L1000 484L990 460L964 450L990 440L1000 416Z" fill="#F5F3FF"/>
+  <rect x="654" y="650" width="146" height="18" rx="9" fill="#10B981"/>
+  <rect x="654" y="692" width="246" height="18" rx="9" fill="rgba(255,255,255,0.26)"/>
+  <rect x="932" y="636" width="104" height="104" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+  <path d="M964 704C964 668 993 640 1028 640V662C1005 662 986 681 986 704H964Z" fill="#A855F7"/>
+  <path d="M1014 648H1040V674H1014V648Z" fill="#22D3EE"/>
+  <defs>
+    <linearGradient id="bg" x1="110" y1="92" x2="1090" y2="822" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1730"/>
+      <stop offset="0.55" stop-color="#0A1022"/>
+      <stop offset="1" stop-color="#07101D"/>
+    </linearGradient>
+    <radialGradient id="disc" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(330 294) rotate(90) scale(118)">
+      <stop stop-color="#312E81"/>
+      <stop offset="0.5" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </radialGradient>
+    <linearGradient id="note" x1="314" y1="220" x2="520" y2="528" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0E7FF"/>
+      <stop offset="1" stop-color="#A5F3FC"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="654" y1="194" x2="1006" y2="226" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.5" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <radialGradient id="spark" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1000 450) rotate(90) scale(56)">
+      <stop stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#312E81"/>
+    </radialGradient>
+  </defs>
+</svg>

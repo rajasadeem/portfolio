@@ -32,4 +32,14 @@ export const projectItems: ProjectItem[] = [
     image: "/projects/launchpad-workflows.svg",
     category: ["SaaS", "Payments", "Full Stack"],
   },
+  {
+    slug: "empress.ac",
+    title: "Empress",
+    description: "AI music learning platform with personalized lesson paths, adaptive practice, and region-aware discovery.",
+    summary:
+      "Built a subscription-based music learning product that uses AI to tailor lessons, recommend practice sessions, and surface region-aware music discovery. Developed scalable backend services and responsive React interfaces for learner progress, profiles, and paid access.",
+    techStack: ["Django", "Python", "PostgreSQL", "React.js", "TypeScript", "OpenAI", "Stripe"],
+    image: "/projects/empress.svg",
+    category: ["EdTech", "AI", "SaaS"],
+  },
 ];
