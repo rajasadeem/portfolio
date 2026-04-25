@@ -42,4 +42,14 @@ export const projectItems: ProjectItem[] = [
     image: "/projects/empress.svg",
     category: ["EdTech", "AI", "SaaS"],
   },
+  {
+    slug: "acoe-server",
+    title: "ACOE Server",
+    description: "Data integration service that transforms SQL Server records into Salesforce-ready payloads.",
+    summary:
+      "Built a lightweight integration layer with Express.js to extract, reshape, and validate large datasets from Microsoft SQL Server before syncing them into Salesforce. Added a CSV-driven mapping system so transformation rules could be updated without code changes, making the service easier to scale and maintain.",
+    techStack: ["Express.js", "Microsoft SQL Server", "Salesforce REST API"],
+    image: "/projects/signal-devops.svg",
+    category: ["Integrations", "Backend", "Data Sync"],
+  },
 ];
