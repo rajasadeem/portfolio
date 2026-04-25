@@ -29,8 +29,8 @@ export const heroContent: HeroContent = {
     "AI-powered automations and low-code systems that reduce manual work.",
   ],
   stats: [
-    { value: "8+", label: "Years delivering full stack products" },
-    { value: "25+", label: "End-to-end launches across web and automation" },
+    { value: "3+", label: "Years delivering full stack products" },
+    { value: "10+", label: "End-to-end launches across web and automation" },
     { value: "99.9%", label: "Mindset for resilient delivery and uptime" },
   ],
 };

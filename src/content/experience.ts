@@ -2,48 +2,33 @@ import type { ExperienceItem } from "@/types/content";
 
 export const experienceItems: ExperienceItem[] = [
   {
-    company: "Apex Digital Systems",
-    role: "Lead Full Stack Engineer",
-    startDate: "Jan 2023",
+    company: "NKU Technologies",
+    role: "Software Engineer",
+    startDate: "Feb 2025",
     endDate: "Present",
-    location: "Remote",
+    location: "Lahore, Pakistan",
     description:
-      "Leading architecture and delivery for modern SaaS products, internal platforms, and AI-assisted customer workflows.",
+      "Contributing to SaaS products with a primary focus on backend development, integrations, and scalable service delivery.",
     achievements: [
-      "Directed the rebuild of a multi-tenant product platform using Next.js, Node.js, and MongoDB, improving release velocity and user retention.",
-      "Introduced CI/CD pipelines, containerized environments, and observability standards that reduced deployment friction and production regressions.",
-      "Built AI-powered support and operations automations that removed repetitive manual processing across multiple teams.",
+      "Developed and maintained scalable RESTful APIs and backend services for multiple client platforms.",
+      "Worked across Express.js, NestJS, and AWS Amplify on SaaS systems that needed maintainable backend foundations.",
+      "Collaborated on React.js frontend features and integrated third-party services to extend application functionality.",
     ],
-    technologies: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Docker", "AWS"],
+    technologies: ["Express.js", "NestJS", "React.js", "AWS Amplify", "TypeScript", "MySQL", "Bubble.io", "Make.com", "Voiceflow", "Stripe"],
   },
   {
-    company: "Northstar Product Studio",
-    role: "Senior MERN Developer",
-    startDate: "May 2020",
-    endDate: "Dec 2022",
-    location: "Hybrid",
+    company: "Mercury Sols",
+    role: "Software Engineer - MERN",
+    startDate: "Oct 2023",
+    endDate: "Jan 2025",
+    location: "Lahore, Pakistan",
     description:
-      "Delivered full lifecycle product engineering for startups needing fast execution with senior-level technical ownership.",
+      "Worked on multiple client projects across frontend and backend, delivering full stack features in fast-paced team environments.",
     achievements: [
-      "Designed reusable frontend systems and API architecture across several funded startup products in healthcare, logistics, and B2B SaaS.",
-      "Shipped multiple admin dashboards, partner portals, and user-facing experiences with a strong focus on responsiveness and maintainability.",
-      "Mentored developers on architecture decisions, code quality, and production readiness as teams scaled.",
+      "Built and maintained backend systems using Node.js, Express.js, and both SQL and NoSQL databases.",
+      "Developed responsive and dynamic user interfaces using React.js, Next.js, and Tailwind CSS.",
+      "Participated in project planning by helping define scope, estimate timelines, and set delivery milestones.",
     ],
-    technologies: ["React", "Express", "MongoDB", "Tailwind CSS", "Redis", "GraphQL"],
-  },
-  {
-    company: "Orbit Automation Lab",
-    role: "Automation & Platform Engineer",
-    startDate: "Aug 2017",
-    endDate: "Apr 2020",
-    location: "Remote",
-    description:
-      "Built workflow automation products and internal tooling bridging traditional engineering with no-code operations systems.",
-    achievements: [
-      "Automated lead routing, reporting, and onboarding flows using API integrations and low-code orchestration tools.",
-      "Created lightweight platforms that let non-technical teams manage processes without developer intervention.",
-      "Established deployment templates and reusable backend services for rapid new-project launches.",
-    ],
-    technologies: ["Node.js", "Python", "Zapier", "Make", "PostgreSQL", "Nginx"],
+    technologies: ["Node.js", "Express.js", "React.js", "Next.js", "PostgreSQL", "MongoDB"],
   },
 ];

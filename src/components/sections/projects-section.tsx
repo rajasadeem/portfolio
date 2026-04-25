@@ -77,26 +77,32 @@ export function ProjectsSection() {
                       ))}
                     </div>
 
-                    <div className="flex flex-wrap gap-3">
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/40 px-4 py-2 text-sm font-medium text-foreground transition hover:border-primary/30 hover:text-primary"
-                      >
-                        <FaGithub className="size-4" />
-                        GitHub
-                      </a>
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/40 px-4 py-2 text-sm font-medium text-foreground transition hover:border-primary/30 hover:text-primary"
-                      >
-                        <HiArrowTopRightOnSquare className="size-4" />
-                        Live Preview
-                      </a>
-                    </div>
+                    {(project.githubUrl || project.liveUrl) ? (
+                      <div className="flex flex-wrap gap-3">
+                        {project.githubUrl ? (
+                          <a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/40 px-4 py-2 text-sm font-medium text-foreground transition hover:border-primary/30 hover:text-primary"
+                          >
+                            <FaGithub className="size-4" />
+                            GitHub
+                          </a>
+                        ) : null}
+                        {project.liveUrl ? (
+                          <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/40 px-4 py-2 text-sm font-medium text-foreground transition hover:border-primary/30 hover:text-primary"
+                          >
+                            <HiArrowTopRightOnSquare className="size-4" />
+                            Live Preview
+                          </a>
+                        ) : null}
+                      </div>
+                    ) : null}
                   </CardContent>
                 </div>
               </div>

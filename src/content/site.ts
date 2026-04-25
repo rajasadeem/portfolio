@@ -1,4 +1,4 @@
-import type { SiteConfig } from "@/types/content";
+﻿import type { SiteConfig } from "@/types/content";
 
 export const siteConfig: SiteConfig = {
   name: "Raja Sadeem",
@@ -18,3 +18,4 @@ export const siteConfig: SiteConfig = {
     { id: "contact", label: "Contact", href: "#contact" },
   ],
 };
+

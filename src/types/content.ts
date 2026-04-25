@@ -94,8 +94,8 @@ export interface ProjectItem {
   summary: string;
   techStack: string[];
   image: string;
-  githubUrl: string;
-  liveUrl: string;
+  githubUrl?: string;
+  liveUrl?: string;
   category: string[];
   featured?: boolean;
 }
